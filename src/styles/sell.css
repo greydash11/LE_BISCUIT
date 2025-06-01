@@ -1,0 +1,75 @@
+/* CONTENEDOR DEL FORMULARIO */
+.formulario-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh; /* Para ocupar toda la altura de la pantalla */
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+/* FORMULARIO */
+form {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--color-terciario);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--color-secundario);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  justify-items: stretch; /* Estira campos al 100% dentro del formulario */
+}
+
+/* ETIQUETAS */
+form label {
+  font-size: 1rem;
+  color: var(--color-primario);
+  margin-bottom: 0.3rem;
+}
+
+/* CAMPOS DE TEXTO Y SELECT */
+form input,
+form textarea,
+form select {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--color-secundario);
+  border-radius: 8px;
+  background-color: #2b1a0d;
+  color: var(--text-color);
+  font-size: 1rem;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* BOTÓN DE ENVÍO */
+form button {
+  background-color: var(--color-primario);
+  color: var(--bg-color);
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--color-secundario);
+}
+
+/* MENSAJE OPCIONAL */
+.form-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+  }
+}

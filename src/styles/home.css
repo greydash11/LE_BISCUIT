@@ -1,0 +1,73 @@
+:root {
+  --color-primario: #c39738;
+  --color-secundario: #7f4311;
+  --color-terciario: #361f00;
+  --text-color: #ffffff;
+  --bg-color: #1a0e00;
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.coffi_title {
+  display: grid;
+  place-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--bg-color);
+  gap: 1.5rem;
+}
+
+/* CONTENEDOR DE TITULOS Y LOGO */
+.title_galleta {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+/* TÍTULO PRINCIPAL */
+.title_origin_2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin: 0;
+}
+
+/* SUBTÍTULO */
+.title_origin {
+  font-size: 1.5rem;
+  color: var(--color-secundario);
+  margin: 0;
+}
+
+/* IMAGEN LOGO */
+.galletas img {
+  width: 250px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 3px solid var(--color-terciario);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .title_origin_2 {
+    font-size: 2.2rem;
+  }
+
+  .title_origin {
+    font-size: 1.2rem;
+  }
+
+  .galletas img {
+    width: 70%;
+  }
+}

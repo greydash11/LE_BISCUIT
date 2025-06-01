@@ -1,26 +1,18 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>pagar</title>
-</head>
-<body class="sell">
-    <h1>pedidos ya</h1>
-    <div>
-
+---
+import Layout from "../layouts/Layout.astro"
+import "../styles/sell.css"
+---
+<Layout>
+    <div class="formulario-container">
+    <h1>COMPRALO! O DEJALO</h1>
         <main class="form_sell">
-            <form class="" action="/sumit">
+            <form class="" action="/">
                 <div class="username">
                 <div class="label_form">
-
                     <label class="color1880" for="username">Username</label>
                 </div>
                 <div>
-
-                    <input type="username" name="username" required>
+                    <input name="username" required>
                 </div>
             </div>
             <div class="email">
@@ -28,7 +20,6 @@
                     <label class="color1880" for="email">Gmail</label>
                 </div>
                 <div>
-
                     <input type="email" name="email" required>
                 </div>
             </div>
@@ -38,14 +29,11 @@
                     <label class="color1880" for="password">Password</label>
                 </div>
                 <div>
-                    
                     <input type="password" name="password" required>
                 </div>
             </div>
             <button>sumit</button>
-            
         </form>
     </main>
-    </div>
-</body>
-</html>
+    </div>    
+</Layout>

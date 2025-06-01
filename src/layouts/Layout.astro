@@ -1,22 +1,23 @@
+---
+import Home from "../pages/Home.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css"
+import Nav from "../components/Nav.astro";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link  type="images/png" href="/images/rara.jpg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Le Biscuit</title>
 	</head>
 	<body>
+		<Nav />
 		<slot />
+		<Footer />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

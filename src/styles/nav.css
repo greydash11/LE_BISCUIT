@@ -1,0 +1,69 @@
+:root {
+  --color-primario: #c39738;
+  --color-secundario: #7f4311;
+  --color-terciario: #361f00;
+  --text-color: #ffffff;
+  --bg-color: #1a0e00;
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-terciario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* LOGO */
+.navbar-logo a {
+  color: var(--color-primario);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: var(--color-secundario);
+}
+
+/* LINKS */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: var(--color-primario);
+}
+
+/* RESPONSIVO PARA MÓVILES (básico) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+}
