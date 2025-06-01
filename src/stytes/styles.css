@@ -1,0 +1,132 @@
+
+h1,h2 {
+    display: flex;
+    justify-content: center;
+}
+.home_coffi{
+    background-color: rgb(143, 78, 33);
+}
+.pedidos{
+background-color: rgb(143, 78, 33);
+}
+.sell{
+    background-color: rgb(143, 78, 33);
+}
+.coffi_navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(221, 137, 89);
+}
+.coffi_title{
+    display: flex;
+    justify-content: center;
+}
+    
+a{
+    font-size: 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(22, 22, 22) ;
+    
+}
+.informacion_grid{
+    display: grid;;
+}
+.info_grid_1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.info_grid_2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+img{
+    width: 50%;
+    border-radius: 20px;
+}
+.navbar_button1{
+    appearance: none;
+    background-color: rgb(221, 137, 89);
+    border-radius: 15rem;
+}
+.navbar_button1:hover{
+    appearance: none;
+    background-color: rgb(228, 151, 8);
+
+    border-radius: 15px;
+}
+
+
+
+
+.form_sell{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px red;
+
+
+}
+.label_form{
+    justify-content: end;
+}
+label{
+    color: black;
+}
+.main_form{
+    display: flex;
+    justify-content: center;
+}
+.galletas{
+    margin-top:8rem;
+    margin-left: 27rem;
+}
+.title_galleta{
+    margin-left: 0rem;
+}
+.title_origin_2{
+    font-size: 4rem;
+}
+.title_origin{
+    font-size: 2rem;
+}
+.botom_pedido{
+    border-radius: 15px;
+}
+.botom_pedido:hover{
+    background-color: rgb(228, 151, 8);
+}
+.information{
+    display: flex;
+}
+.text_information{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgb(221, 137, 89);
+    border-radius: 1rem
+}
+.precio{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgb(221, 137, 89);
+    border-radius: 1rem
+}
+.button{
+    border-radius: 13rem;
+    background-color: rgb(236, 132, 62);
+}
+.button:hover{
+    background-color: rgb(170, 86, 38);
+}
+.color1880{
+    color: red;
+}
