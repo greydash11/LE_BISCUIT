@@ -8,6 +8,8 @@
   --font-family: 'Segoe UI', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
@@ -20,6 +22,10 @@ body {
   text-align: center;
   padding: 2rem 1rem;
   color: var(--color-primario);
+}
+
+.coffi_title h1 {
+  font-family: 'Pacifico', cursive;
 }
 
 .informacion_grid {

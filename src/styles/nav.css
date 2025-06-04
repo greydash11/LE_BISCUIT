@@ -1,39 +1,13 @@
-:root {
-  --color-primario: #c39738;
-  --color-secundario: #7f4311;
-  --color-terciario: #361f00;
-  --text-color: #ffffff;
-  --bg-color: #1a0e00;
-  --font-family: 'Segoe UI', sans-serif;
-}
-
-/* NAVBAR */
 .navbar {
   background-color: var(--color-terciario);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  border: 3px solid var(--color-primario); /* borde alrededor del navbar */
+  box-shadow: 0 4px 8px rgba(138, 83, 20, 0.5);
 }
 
-/* LOGO */
-.navbar-logo a {
-  color: var(--color-primario);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar-logo a:hover {
-  color: var(--color-secundario);
-}
-
-/* LINKS */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -43,27 +17,19 @@
 }
 
 .navbar-links li a {
-  color: var(--text-color);
+  color: var(--text-color); /* letras blancas */
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid var(--color-primario); /* borde dorado */
+  border-radius: 6px;
+  background-color: rgba(195, 151, 56, 0.3); /* fondo dorado claro */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-  color: var(--color-primario);
-}
-
-/* RESPONSIVO PARA MÓVILES (básico) */
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-links {
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-top: 1rem;
-  }
+  color: var(--text-color); /* letras blancas al hover */
+  background-color: var(--color-primario);
+  border-color: var(--color-secundario);
 }
